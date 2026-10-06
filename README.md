@@ -38,6 +38,15 @@ name also doesn't match the Copilot agent's name. Ask: use the Copilot
 session name as the display title for both the list and pinned entries, and
 update it when it changes.
 
+## 2c. Edited files: truncated in chat, and invisible outside the workspace
+
+- When Copilot edits a Markdown file, Chat View shows the edit but truncates it.
+  Ask: a way to open the full file, a rendered preview, or a side panel.
+- If the edited file is outside the workspace (for example under `~/`), it
+  doesn't appear in the diff view or the files list, so there's no way to see
+  what changed. Ask: show files that were edited by a session even when they're
+  outside the project root, using the paths from the `tool.execution_*` events.
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
