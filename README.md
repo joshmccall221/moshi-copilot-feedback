@@ -47,6 +47,21 @@ update it when it changes.
   what changed. Ask: show files that were edited by a session even when they're
   outside the project root, using the paths from the `tool.execution_*` events.
 
+## 2d. Chat View and Term View issues
+
+- **Duplicate messages:** Copilot chat mode sometimes shows messages twice
+  (may be visual only).
+- **Term view cursor:** you can't tap in the middle of the prompt to move the cursor.
+- **Formatting lost when sending from chat to the terminal:** line breaks and
+  spacing aren't preserved, so text runs together. This breaks slash commands
+  and URLs.
+- **Multi-step tabbed questions:** when Copilot asks a multi-step (tabbed)
+  question, Chat View only shows an approval prompt. Nothing says the
+  terminal needs more input. I only found out by accident. Ask: detect this
+  state and show "needs input in terminal" with a jump-to-terminal button.
+- **Chat to Term switch:** after flipping from Chat to Term, you still have
+  to tap Reconnect. It should reconnect automatically.
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
