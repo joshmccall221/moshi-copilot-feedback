@@ -33,8 +33,10 @@ Ask: a configurable shortcut bar, including chords (Ctrl+X then a key).
 ## 2b. Session/agent names don't match `/rename`
 
 The agent name Moshi shows for a Copilot session doesn't match the name set
-with Copilot's `/rename` (or the auto-generated name). Ask: use the Copilot
-session name as the display title and update it when it changes.
+with Copilot's `/rename` (or the auto-generated name). The **pinned** agent's
+name also doesn't match the Copilot agent's name. Ask: use the Copilot
+session name as the display title for both the list and pinned entries, and
+update it when it changes.
 
 ## 3. Performance bug: Mac app slows down until restarted
 
