@@ -73,8 +73,10 @@ Got this error in the Moshi UI (2026-10-06 14:14 CDT):
 React #185 is "Maximum update depth exceeded": a component keeps calling
 setState in an effect or render, causing an infinite update loop. That could
 also explain the slowdown in section 3 (a render loop burns CPU and memory
-until the app is restarted). Which screen I was on when it appeared:
-_(fill in)_. A dev build or the component stack would pin it down.
+until the app is restarted). Context: Moshi locked up, so I quit and relaunched it. On relaunch the app was
+blank, with this error shown at the top. So the render loop seems to be hit at
+startup, possibly from restored state, which would mean a relaunch doesn't
+clear it. A dev build or the component stack would pin it down.
 
 ## 3. Performance bug: Mac app slows down until restarted
 
