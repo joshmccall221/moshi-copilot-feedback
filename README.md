@@ -62,6 +62,20 @@ update it when it changes.
 - **Chat to Term switch:** after flipping from Chat to Term, you still have
   to tap Reconnect. It should reconnect automatically.
 
+## 2e. React error #185 in the app
+
+Got this error in the Moshi UI (2026-10-06 14:14 CDT):
+
+> Minified React error #185; visit https://react.dev/errors/185 for the full
+> message or use the non-minified dev environment for full errors and
+> additional helpful warnings.
+
+React #185 is "Maximum update depth exceeded": a component keeps calling
+setState in an effect or render, causing an infinite update loop. That could
+also explain the slowdown in section 3 (a render loop burns CPU and memory
+until the app is restarted). Which screen I was on when it appeared:
+_(fill in)_. A dev build or the component stack would pin it down.
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
