@@ -85,6 +85,19 @@ mention one. The docs only say saved connections can be reordered from the home
 list (docs/connections). Request: let pinned sessions be dragged into a custom
 order, or sorted by name or most recent activity.
 
+## 2g. Chat View: long comment/reply doesn't send
+
+When I reply in Chat View using the comment feature and the message is large,
+pressing Send does nothing: no error, no sign it was rejected. When I switch to
+Term View, the full text is sitting in the Copilot CLI input box, but the Enter
+that should submit it was never delivered. Short replies send fine.
+
+My guess, not confirmed: the text is pasted into the terminal and the Enter is
+sent right after. With a large paste, the CLI is still handling the paste (or
+shows it as a collapsed "pasted text" block), so the Enter is dropped or
+swallowed. Request: send Enter after a short delay or after the paste finishes,
+and show an error or keep the draft if the send fails.
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
