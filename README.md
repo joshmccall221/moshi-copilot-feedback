@@ -78,6 +78,13 @@ blank, with this error shown at the top. So the render loop seems to be hit at
 startup, possibly from restored state, which would mean a relaunch doesn't
 clear it. A dev build or the component stack would pin it down.
 
+## 2f. Can't sort or reorder pinned sessions
+
+I couldn't find a way to sort or reorder pinned sessions, and the docs don't
+mention one. The docs only say saved connections can be reordered from the home
+list (docs/connections). Request: let pinned sessions be dragged into a custom
+order, or sorted by name or most recent activity.
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
