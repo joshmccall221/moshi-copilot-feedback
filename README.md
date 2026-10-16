@@ -98,6 +98,20 @@ shows it as a collapsed "pasted text" block), so the Enter is dropped or
 swallowed. Request: send Enter after a short delay or after the paste finishes,
 and show an error or keep the draft if the send fails.
 
+## 2h. Agent status and pinning should work the same on every app and host
+
+Idle / done / waiting status and pinned sessions don't behave the same across
+the mobile, web, and desktop apps. They also differ depending on which host
+view I'm in, and in the "all hosts" view.
+
+Request:
+- Show idle, done, and waiting status for every agent on mobile, web, and desktop.
+- Let me pin sessions on all three, and keep pinned sessions in sync between them.
+- Show the same status and pins in the "all hosts" view as in a single-host view.
+
+(Related: item 2f asks for sorting pinned sessions, and pinned agents
+currently don't show a working status.)
+
 ## 3. Performance bug: Mac app slows down until restarted
 
 The Moshi Mac app gradually becomes slow and has to be quit and relaunched.
